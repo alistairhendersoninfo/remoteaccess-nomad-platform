@@ -27,7 +27,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3-pip
-          pip3 install mkdocs
+          pip3 install mkdocs mkdocs-material
 
       - name: Build mkdocs site for books
         run: |

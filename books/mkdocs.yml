@@ -4,20 +4,19 @@ site_author: Alistair Henderson
 repo_url: https://github.com/alistairhendersoninfo/remoteaccess-nomad-platform
 repo_name: GitHub
 
-
 theme:
   name: material
-  logo: images/logo.png
+  logo: images/remoteaccessninja.png
   favicon: images/favicon.ico
-
-
 
 nav:
   - Home: index.md
+  - Overview: docs/overview/README.md
+  - Bootstrap Installation: docs/bootstrap/README.md
+  - Preflight Checks: docs/preflight/README.md
+  - Hardening Modules: docs/hardening/README.md
+  - Deployment Modules: docs/modules/README.md
 
 markdown_extensions:
   - toc:
       permalink: true
-
-
-
