@@ -1,4 +1,9 @@
 site_name: Remote Access Platform Documentation
+site_description: Fully self-hosted, hardened Remote Access Platform documentation
+site_author: Alistair Henderson
+repo_url: https://github.com/alistairhendersoninfo/remoteaccess-nomad-platform
+repo_name: GitHub
+
 
 theme:
   name: material
