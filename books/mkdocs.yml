@@ -1,1 +1,14 @@
-site_name: My Docs
+site_name: Remote Access Platform Documentation
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+
+
