@@ -23,11 +23,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Install Python and mkdocs
+      -       - name: Install Python, mkdocs, and mkdocs-material
         run: |
           sudo apt update
           sudo apt install -y python3-pip
-          pip3 install mkdocs
+          pip3 install mkdocs mkdocs-material
 
       - name: Build mkdocs site
         run: |
