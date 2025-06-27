@@ -24,11 +24,23 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Copy pages to output
+      - name: Install Python and mkdocs
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip
+          pip3 install mkdocs
+
+      - name: Build mkdocs site
+        run: |
+          cd books
+          mkdocs build
+          cd ..
+
+      - name: Prepare combined _site output
         run: |
           mkdir -p ./_site
           cp -r pages/* ./_site/ || true
-          cp -r books/* ./_site/ || true
+          cp -r books/site/* ./_site/ || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
