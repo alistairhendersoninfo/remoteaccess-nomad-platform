@@ -1,0 +1,64 @@
+*.pem
+*.key
+*.crt
+*.p12
+*.env
+__pycache__/
+*.pyc
+.DS_Store
+
+
+# Ignore zip and archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Ignore binaries and executables
+*.exe
+*.bin
+*.dll
+*.so
+*.dylib
+*.out
+*.o
+
+# Ignore secret files
+*.pem
+*.key
+*.p12
+*.crt
+*.cer
+*.env
+vault-unseal-keys.txt
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/workspace settings
+.vscode/
+.idea/
+*.swp
+
+# Ignore local scripts or temp files
+*.bak
+*.tmp
+*.old
+*.log
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore node modules if using NodeJS
+node_modules/
+
+# Ignore terraform state files if using Terraform
+*.tfstate
+*.tfstate.backup
+
+# Ignore Ansible vault files if unencrypted versions exist
+*vault-pass.txt
